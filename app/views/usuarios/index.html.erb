@@ -1,0 +1,11 @@
+
+<% @usuarios.each do |aux| %>
+
+    <%= aux.nome %> &nbsp  <%=aux.idade %> &nbsp <%= link_to 'apaga', usuario_path(aux), method: :delete %>
+    <br />
+    
+<%end %>
+
+<br />
+
+<%= link_to 'novo', new_usuario_path %>

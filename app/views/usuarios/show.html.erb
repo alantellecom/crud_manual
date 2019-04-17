@@ -1,0 +1,13 @@
+<p>
+<%= @usuario.nome %>
+</p>
+
+<p>
+<%= @usuario.idade %>
+</p>
+
+<br />
+
+<%=link_to 'edita', edit_usuario_path(@usuario) %>
+<br />
+<%= link_to 'index', root_path %>
